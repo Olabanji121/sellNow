@@ -4,11 +4,13 @@ import ViewImageScreen from './app/screens/ViewImageScreen';
 import WelcomeScreen from './app/screens/WelcomeScreen';
 import Card from './app/components/Card'
 import ListingDetails from './app/screens/ListingDetails';
+import MessagesScreen from './app/screens/MessagesScreen';
 
 export default function App() {
 
   return (
-    <ViewImageScreen />
+    <MessagesScreen />
+    // <ViewImageScreen />
     // <View style={{
     //   backgroundColor: '#f8f4f4',
     //   // padding: 20,
