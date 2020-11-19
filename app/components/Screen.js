@@ -1,11 +1,13 @@
 import React, { Children } from 'react'
 import Constants from 'expo-constants'
-import { SafeAreaView, StyleSheet } from 'react-native'
+import { SafeAreaView, StyleSheet, View, Platform } from 'react-native'
 
 const Screen = ({ children, style }) => {
   return (
     <SafeAreaView style={[styles.screen, style]}>
-      {children}
+      <View style={Platform.OS === 'ios' && style}>
+        {children}
+      </View>
     </SafeAreaView>
   )
 }
